@@ -29,10 +29,10 @@ void setup() {
 
 void loop(){
   // leitura dos potenciometros
-  angGirar = map(analogRead(potGirar), 0, 1023, 30, 160); // Angulo para girar
-  angEsticar = map(analogRead(potEsticar), 0, 1023, 60, 100); // Angulo para esticar
-  angSubir = map(analogRead(potSubir), 0, 1023, 40, 180);  // Angulo para subir
-  angGarra = map(analogRead(potGarra), 0, 1023, 20, 118); // Angulo da garra
+  angGirar = map(analogRead(potGirar), 0, 1023, 0, 180); // Angulo para girar
+  angEsticar = map(analogRead(potEsticar), 0, 1023, 0, 180); // Angulo para esticar
+  angSubir = map(analogRead(potSubir), 0, 1023, 0, 180);  // Angulo para subir
+  angGarra = map(analogRead(potGarra), 0, 1023, 0, 180); // Angulo da garra
 
   // posicionamento dos potenciometros 
   girar.write(angGirar);
